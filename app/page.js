@@ -19,7 +19,7 @@ export default async function Home() {
       <div className="container">
         {/* this is container for all the post for flex */}
         {posts?.map((post) => {
-          return <Post {...post} />;
+          return <Post key={post.id} {...post} />;
         })}
       </div>
     </>
