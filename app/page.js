@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 
 async function getPosts() {
-  const res = await fetch(`https://dummyjson.com/posts`, {
+  const res = await fetch(`api/posts`, {
     headers: {
       "Content-Type": "application/json",
     },
